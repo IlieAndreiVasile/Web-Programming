@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> 3 </title>
+    <style>
+		h1 {
+			background-color: black;
+			color: #00bfff;
+			text-align: center;
+			text-shadow: 2px 1px #00bfff;
+		}
+	
+		body {
+			background-color: #660066;
+		}
+	
+        .container {
+            position: relative;
+			height: 80%;
+            width: 80%;
+        }
+
+        .image {
+            display: block;
+            height: 100%;
+			width: 100%;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008CBA;
+        }
+
+        .container:hover .overlay {
+            opacity: 0.95;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Actors</h1>
+
+    <table>
+		
+        <tr>
+            <th>
+                <div class="container">
+                    <img src="RDJ.jpg" class="image">
+
+                    <div class="overlay">
+                        <div class="text">
+							<p>Robbie Downey jr</p>
+							<p>1965</p>
+							<p>1,74 m</p>
+							<p>american</p>
+						</div>
+                    </div>
+                </div>
+            </th>
+            <th>
+                <div class="container">
+					<img src="CP.jpg" class="image">
+
+                    <div class="overlay">
+                        <div class="text">
+							<p>Chris Pratt</p>
+							<p>1979</p>
+							<p>1,88 m</p>
+							<p>american</p>
+						</div>
+                    </div>
+                </div>
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                <div class="container">
+                    <img src="CH.jpg" class="image">
+
+                    <div class="overlay">
+                        <div class="text">
+							<p>Chris Hamesworth</p>
+							<p>1983</p>
+							<p>1,90 m</p>
+							<p>australian</p>
+						</div>
+                    </div>
+                </div>
+            </th>
+            <th>
+                <div class="container">
+                    <img src="CE.jpg" class="image">
+
+                    <div class="overlay">
+                        <div class="text">
+							<p>Chris Evans</p>
+							<p>1981</p>
+							<p>1,83 m</p>
+							<p>american</p>
+						</div>
+                    </div>
+                </div>
+            </th>
+        </tr>
+		
+		<tr>
+			<th>
+				<div class="container">
+					<img src="RR.jpg" class="image">
+
+					<div class="overlay">
+						<div class="text">
+							<p>Ryan Reynolds</p>
+							<p>1976</p>
+							<p>1,88 m</p>
+							<p>canadian</p>
+						</div>
+					</div>
+				</div>
+			</th>
+			<th>
+				<div class="container">
+					<img src="HJ.jpg" class="image">
+
+					<div class="overlay">
+						<div class="text">
+							<p>Hugh Jackman</p>
+							<p>1968</p>
+							<p>1,88 m</p>
+							<p>australian</p>
+						</div>
+					</div>
+				</div>
+			</th>
+		</tr>
+		
+    </table>
+
+</body>
+
+</html>
