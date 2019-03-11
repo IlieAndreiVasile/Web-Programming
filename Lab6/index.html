@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Actors</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            var picWidth = 260;
+            var poz = 0;
+            $("li").each(function() {
+                poz += picWidth;
+                $(this).css("left",poz);
+            });
+
+            function slide() {
+                $("li").animate({"left":"+=10px"}, 100, again);
+            }
+
+            function again() {
+                var left = $(this).parent().offset().left + $(this).offset().left;
+                console.log("left="+left);
+                if (left >= 1200) {
+                    $(this).css("left",left - 1200);
+                }
+                slide();
+            }
+
+            slide();
+
+            $(".smallrdj").on("click", function()
+            {
+                $(".bigrdj").show();
+            });
+
+            $(".bigrdj").on("click", function()
+            {
+                $(this).hide();
+            });
+
+            $(".smallce").on("click", function()
+            {
+                $(".bigce").show();
+            });
+
+            $(".bigce").on("click", function()
+            {
+                $(this).hide();
+            });
+
+            $(".smallch").on("click", function()
+            {
+                $(".bigch").show();
+            });
+
+            $(".bigch").on("click", function()
+            {
+                $(this).hide();
+            });
+
+            $(".smallcp").on("click", function()
+            {
+                $(".bigcp").show();
+            });
+
+            $(".bigcp").on("click", function()
+            {
+                $(this).hide();
+            });
+
+            $(".smallrr").on("click", function()
+            {
+                $(".bigrr").show();
+            });
+
+            $(".bigrr").on("click", function()
+            {
+                $(this).hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="images/RDJ.jpg" class="bigimg bigrdj">
+        <img src="images/CE.jpg" class="bigimg bigce">
+        <img src="images/CH.jpg" class="bigimg bigch">
+        <img src="images/CP.jpg" class="bigimg bigcp">
+        <img src="images/RR.jpg" class="bigimg bigrr">
+        <ul>
+            <li><img src="images/RDJ.jpg" class="smallimg smallrdj"></li>
+            <li><img src="images/CE.jpg" class="smallimg smallce"></li>
+            <li><img src="images/CH.jpg" class="smallimg smallch"></li>
+            <li><img src="images/CP.jpg" class="smallimg smallcp"></li>
+            <li><img src="images/RR.jpg" class="smallimg smallrr"></li>
+        </ul>
+    </div>
+</body>
+</html>

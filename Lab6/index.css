@@ -1,0 +1,62 @@
+body {
+    background-color: #660066;
+}
+
+ul {
+    position: absolute;
+    left: -50px;
+}
+li {
+    position: absolute;
+    list-style: none;
+
+}
+
+.container {
+    margin: 30ch 0ch;
+}
+
+.smallimg {
+    display: block;
+    float: left;
+    height: 45ch;
+    width: 35ch;
+    padding: 1ch;
+    transition: 1s;
+}
+
+.smallimg:hover {
+    transform: scale(1.1);
+}
+
+.bigimg {
+    display: none;
+    height: 120ch;
+    width: 90ch;
+    margin: -30ch -1ch -1ch;
+    padding: 10ch 49.8ch;
+    transition: 1s;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.smallimg .smallrdj {}
+
+.bigimg .bigrdj {}
+
+.smallimg .smallce {}
+
+.bigimg .bigce {}
+
+.smallimg .smallch {}
+
+.bigimg .bigch {}
+
+.smallimg .smallcp {}
+
+.bigimg .bigcp {}
+
+.smallimg .smallrr {}
+
+.bigimg .bigrr {}
