@@ -1,0 +1,30 @@
+#firstelem {
+    font-family: fantasy;
+    font-size: 1.4ch;
+    color: black;
+}
+
+#first {
+    font-family: 'Courier New', Courier, monospace;
+    color: blue;
+}
+
+#second {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: yellow;
+}
+
+#third {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red;
+}
+
+#fourth {
+    font-family: 'Times New Roman', Times, serif;
+    color: green;
+}
+
+#fifth {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: orange;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ArraySorting</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+
+    <body>
+        <input type="text" id="arrayInput">
+        <button onclick="sortf()">Sort</button>
+
+        <table id="arraytable"></table>
+
+        <script type="text/javascript">
+            function sortf()
+            {
+                //sort the array
+                var numbers = document.getElementById("arrayInput").value.split(' ');
+                numbers.sort(function(x, y){ return x-y });
+
+                var html = '<table id="arraytable" cellpadding="1" border="5">' + "\n";
+
+                //populate table with array elements
+                var colIndex = 1;
+                for (var i=0; i<numbers.length; i++)
+                {
+                    if (colIndex == 1)
+                    {
+                        html += '<tr>';
+                    }
+                    html += '<td width="120">' + numbers[i] + '</td>' + "\n";
+                    if (++colIndex > 5)
+                    {
+                        html += '</tr>';
+                        colIndex = 1;
+                    }
+                }
+
+                //create empty columns for the last row
+                var remainingCellsCount = numbers.length % 5 + 1;
+                if (remainingCellsCount)
+                {
+                    for (var j=0; j<remainingCellsCount; j++)
+                    {
+                        html += '<td width="120"> </td>' + "\n";
+                    }
+                    html += '</tr>';
+                }
+                html += '</table>' + "\n";
+
+                document.getElementById('arraytable').innerHTML = html;
+            }
+        </script>
+    </body>
+</html>
+
+
+
+
+ <!--function sortf()-->
+ <!--{-->
+     <!--var numbers = document.getElementById("arrayInput").value.split(' ');-->
+     <!--numbers.sort(function(x, y){ return x-y });-->
+     <!--document.write("sorted array: " + numbers.toString() + "<br/>");-->
+ <!--}-->
+
